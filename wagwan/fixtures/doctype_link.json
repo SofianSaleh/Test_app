@@ -1,0 +1,19 @@
+[
+ {
+  "custom": 1,
+  "docstatus": 0,
+  "doctype": "DocType Link",
+  "group": null,
+  "hidden": 0,
+  "is_child_table": 0,
+  "link_doctype": "Wagwan",
+  "link_fieldname": "Title",
+  "modified": "2024-04-14 11:31:15.533742",
+  "name": "b558013226",
+  "parent": "Customer",
+  "parent_doctype": null,
+  "parentfield": "links",
+  "parenttype": "Customize Form",
+  "table_fieldname": null
+ }
+]

@@ -213,3 +213,19 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"wagwan.auth.validate"
 # ]
+fixtures = [
+    {"dt": "DocType Link", "filters": [
+        [
+            "name", "in", [
+                "b558013226"
+            ]
+        ]
+    ]},
+    {"dt": "Custom Field", "filters": [
+        [
+            "name", "in", [
+                "Customer-custom_test"
+            ]
+        ]
+    ]}
+]
