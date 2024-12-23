@@ -27,7 +27,7 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Item" : "public/js/item.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -117,6 +117,7 @@ app_license = "MIT"
 # Hook on document methods and events
 
 # doc_events = {
+#     "Item": {"validate": "wagwan.api.validate"}
 # 	"*": {
 # 		"on_update": "method",
 # 		"on_cancel": "method",
@@ -143,6 +144,7 @@ app_license = "MIT"
 # 	"monthly": [
 # 		"wagwan.tasks.monthly"
 # 	],
+# "*/30 * * * *":[]
 # }
 
 # Testing
@@ -213,19 +215,14 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"wagwan.auth.validate"
 # ]
+# fixtures = [
+#     {"dt": "DocType Link", "filters": [["name", "in", ["b558013226"]]]},
+#     {"dt": "Custom Field", "filters": [["name", "in", []]]},
+# ]
+
 fixtures = [
-    {"dt": "DocType Link", "filters": [
-        [
-            "name", "in", [
-                "b558013226"
-            ]
-        ]
-    ]},
-    {"dt": "Custom Field", "filters": [
-        [
-            "name", "in", [
-                "Customer-custom_test"
-            ]
-        ]
-    ]}
+    {
+        "dt": "Custom Field",
+        "filters": [["name", "in", ["Item-custom_category", "Customer-custom_test"]]],
+    }
 ]

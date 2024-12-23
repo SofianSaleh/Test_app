@@ -3,6 +3,13 @@
 /* eslint-disable */
 
 frappe.query_reports["Test Stock ageing"] = {
+  formatter: function (value, row, column, data, default_formatter) {
+    console.log(frappe.query_reports);
+  },
+  // html_format: function () {
+  //   console.log("arguments");
+  // },
+
   filters: [
     {
       fieldname: "company",
